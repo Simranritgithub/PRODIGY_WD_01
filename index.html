@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7; /* Light background for the body */
+            color: black;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff512f, #dd2476); /* Gradient for Header */
+            padding: 10px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* 3D shadow */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Text shadow for 3D effect */
+            transition: transform 0.2s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            transform: scale(1.1); /* Slight scale effect on hover */
+        }
+
+        section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        #home {
+            background-color: #ffebcc; 
+        }
+
+        #about {
+            background-color: #ffebcc;
+        }
+
+        #services {
+            background-color: #ffebcc; 
+        }
+
+        #contact {
+            background-color: #ffebcc; 
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive; 
+            color: #333;
+            font-size: 56px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); /* 3D text shadow */
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            color: #333;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow for headings */
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+            line-height: 1.6;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for paragraphs */
+        }
+
+        .image-gallery img {
+            width: 250px;
+            margin: 15px;
+            border-radius: 15px;
+            transition: transform 0.4s, box-shadow 0.4s; /* Smooth transition for effects */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* 3D shadow for images */
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1) rotate(-3deg); /* 3D hover effect */
+            box-shadow: 0 12px 45px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 22px;
+            padding: 10px 0;
+            color: #333;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #dd2476, #ff512f);
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Food Delight</h1>
+        <p>Your go-to place for the most delicious and fresh food in town!</p>
+        <div class="image-gallery">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Delicious Pizza">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" alt="Fresh Salads">
+            <img src="https://images.unsplash.com/photo-1546069901-eacef0df6022" alt="Exotic Desserts">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Food Delight is passionate about bringing you the
+             best culinary experiences, from local favorites 
+             to exotic dishes from around the world. Our mission is to deliver high-quality food made with love and care.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Delicious meals for dine-in and take-out</li>
+            <li>Catering for events and special occasions</li>
+            <li>Customized meal plans</li>
+            <li>Online ordering and delivery</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries or reservations, reach us at:</p>
+        <p>Email: info@fooddelight.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Visit us at: 123 Tasty Avenue, Food City</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Food Delight | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
